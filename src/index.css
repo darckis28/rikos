@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto.ttf") format("tff");
+  weight: 400;
+}
+.container-page {
+  min-height: 100dvb;
+  width: 100%;
+  display: grid;
+  grid-template: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Roboto", sans-serif;
+}
