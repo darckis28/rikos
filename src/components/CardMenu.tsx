@@ -1,14 +1,12 @@
 import { MdAddShoppingCart } from "react-icons/md";
-interface CardMenuProps {
-  title: string;
-}
+import { CartaType } from "../const/Carta";
 
-const CardMenu = () => {
+const CardMenu = ({ title, image }: CartaType) => {
   return (
     <li className="group cursor-pointer">
       <div className="relative">
         <img
-          src="https://myplate-prod.azureedge.us/sites/default/files/styles/recipe_525_x_350_/public/2021-09/HarvestVegetableSalad_527x323.jpg?itok=RFe6ZyZt"
+          src={image}
           alt=""
           className="aspect-square object-center object-cover"
         />
@@ -20,7 +18,7 @@ const CardMenu = () => {
       </div>
 
       <h3 className="text-[#2D3A4B] uppercase text-lg text-center group-hover:text-yellow-500">
-        Ensaladas
+        {title}
       </h3>
     </li>
   );
