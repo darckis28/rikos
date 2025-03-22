@@ -79,6 +79,9 @@ const Footer = () => {
       <p className="text-center text-white/50 text-xs">
         © 2025 Riko´s Todos los derechos reservados.
       </p>
+      <p className="text-center text-white/50 text-xs">
+        Diseñado por Andi Aguirre.
+      </p>
     </footer>
   );
 };

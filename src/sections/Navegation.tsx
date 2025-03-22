@@ -1,6 +1,6 @@
 const Navegation = () => {
   return (
-    <nav className="bg-red-800 px-5  flex justify-between items-center">
+    <nav className="bg-red-800 px-5  flex justify-between items-center border-b border-black/20">
       <a href="#">
         <img
           src="/logo.png"
