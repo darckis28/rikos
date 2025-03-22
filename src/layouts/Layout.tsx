@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Navegation />
       </div>
 
-      <main className="[grid-area:main]">{children}</main>
+      <main className="[grid-area:main] ">{children}</main>
       <div className="[grid-area:footer]">
         <Footer />
       </div>
