@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { PROMO } from "../const/promos";
+import { PROMOIMAGE } from "../const/promosImages";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 const Hero = () => {
   const [img, setImg] = useState<number>(0);
   const next = () => {
-    if (img < PROMO.length - 1) {
+    if (img < PROMOIMAGE.length - 1) {
       setImg(img + 1);
     } else {
       setImg(0);
@@ -14,7 +14,7 @@ const Hero = () => {
     if (img > 0) {
       setImg(img - 1);
     } else {
-      setImg(PROMO.length - 1);
+      setImg(PROMOIMAGE.length - 1);
     }
   };
   return (
@@ -33,7 +33,7 @@ const Hero = () => {
       </button>
 
       <img
-        src={PROMO[img]}
+        src={PROMOIMAGE[img]}
         alt="promocion de polleria rikos"
         className="w-full h-full object-cover"
       />

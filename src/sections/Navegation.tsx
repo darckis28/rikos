@@ -1,3 +1,4 @@
+import { FaShoppingCart } from "react-icons/fa";
 const Navegation = () => {
   return (
     <nav className="bg-red-800 flex justify-between items-center border-b border-black/20 px-20">
@@ -17,8 +18,8 @@ const Navegation = () => {
           <li className="py-1">promociones</li>
           <li className="py-1">Sobre nosotros</li>
         </ul>
-        <button className="bg-yellow-500 text-white px-3 py-1 rounded-lg">
-          carrito
+        <button className=" text-white px-3 py-1 rounded-lg  text-lg">
+          <FaShoppingCart />
         </button>
       </div>
     </nav>
