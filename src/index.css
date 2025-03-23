@@ -13,3 +13,29 @@
   grid-template-rows: auto 1fr auto;
   font-family: "Roboto", sans-serif;
 }
+
+.scrollstyle::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scrollstyle::-webkit-scrollbar-track {
+  background: #ffffff; /* Color de fondo */
+  border-radius: 10px;
+}
+
+.scrollstyle::-webkit-scrollbar-thumb {
+  background: #c01212; /* Color del scroll */
+  border-radius: 10px;
+}
+@theme {
+  --animate-wiggle: wiggle 0.5s ease-in-out;
+  @keyframes wiggle {
+    0% {
+      transform: translateY(100px);
+    }
+    ,
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
