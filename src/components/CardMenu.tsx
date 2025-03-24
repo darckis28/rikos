@@ -1,16 +1,22 @@
 import { MdAddShoppingCart } from "react-icons/md";
+import { item } from "../interfaces/interface";
 
 interface CartaType {
-  title: string;
-  image: string;
-  price?: number;
+  item: item;
+  actionClick?: (title: string) => void;
+  actionItem?: (item: item) => void;
 }
-const CardMenu = ({ title, image, price }: CartaType) => {
+const CardMenu = ({ item, actionClick, actionItem }: CartaType) => {
   return (
-    <li className="group cursor-pointer">
+    <li
+      className="group cursor-pointer"
+      onClick={() =>
+        actionClick ? actionClick(item?.title) : actionItem && actionItem(item)
+      }
+    >
       <div className="relative">
         <img
-          src={image}
+          src={item?.image}
           alt=""
           className="aspect-square object-center object-cover w-full"
         />
@@ -22,11 +28,11 @@ const CardMenu = ({ title, image, price }: CartaType) => {
       </div>
 
       <h3 className="text-[#2D3A4B] uppercase text-lg text-center group-hover:text-yellow-500">
-        {title}
+        {item?.title}
       </h3>
-      {price && (
+      {item?.price && (
         <span className="text-center block text-red-700 font-bold ">
-          S/{price}.00
+          S/{item?.price}.00
         </span>
       )}
     </li>

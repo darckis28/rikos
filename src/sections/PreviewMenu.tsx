@@ -1,28 +1,30 @@
 import CardMenu from "../components/CardMenu";
 import Modal from "../components/Modal";
 import Title from "../components/Title";
-import { PROMOS } from "../const/promos";
-import { useState } from "react";
 import BtnClose from "../components/BtnClose";
+import { usePageContext } from "../hooks/usePageContext";
 
 const PreviewMenu = () => {
-  const [show, setShow] = useState(true);
+  const { modalCarta, setModalCarta, itemsPreview, activeModalItem } =
+    usePageContext();
+
   const handleShow = () => {
-    setShow(!show);
+    setModalCarta(!modalCarta);
   };
+
   return (
-    <Modal show={show}>
-      <header className="flex items-center justify-between py-4">
-        <Title>Preview Menu</Title>
+    <Modal show={modalCarta}>
+      <header className="flex items-center justify-between py-4 px-5">
+        <Title>{itemsPreview.title}</Title>
         <BtnClose handleShow={handleShow} />
       </header>
 
       <ul className="grid grid-cols-4 gap-4 pb-8 px-8  ">
-        {PROMOS.map((promo) => (
+        {itemsPreview.items?.map((promo, idx) => (
           <CardMenu
-            image={promo.image}
-            title={promo.title}
-            price={promo.price}
+            actionItem={activeModalItem}
+            key={idx}
+            item={promo}
           />
         ))}
       </ul>

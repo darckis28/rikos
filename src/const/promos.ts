@@ -1,7 +1,8 @@
 import promopepsi from "../assets/promos/promopepsi.jpg";
 import polloentero from "../assets/promos/polloentero.jpg";
 import dospollos from "../assets/promos/dospollos.jpg";
-export const PROMOS = [
+import { item } from "../interfaces/interface";
+export const PROMOS: item[] = [
   {
     id: 6565465,
     title: "Festín Clásico",

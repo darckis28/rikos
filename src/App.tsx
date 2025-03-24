@@ -1,6 +1,11 @@
+import PagePovaider from "./context/PagePovaider";
 import Home from "./page/Home";
 
 const App = () => {
-  return <Home />;
+  return (
+    <PagePovaider>
+      <Home />
+    </PagePovaider>
+  );
 };
 export default App;

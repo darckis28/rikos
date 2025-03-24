@@ -1,21 +1,14 @@
 import BtnClose from "../components/BtnClose";
 import Modal from "../components/Modal";
-import polloentero from "../assets/promos/polloentero.jpg";
 import { FaPlus } from "react-icons/fa";
 import { RiSubtractFill } from "react-icons/ri";
+import { usePageContext } from "../hooks/usePageContext";
 const PreviewDescription = () => {
-  const item = {
-    id: 321654,
-    title: "Mega Festín Chaufa",
-    description:
-      "1 POLLO A LA LEÑA ENTERO + 1 PORCIONES DE PAPA FRITAS FAMILIAR + ENSALADA FAMILIAR ",
-    price: 75.0,
-    image: polloentero,
-  };
+  const { item, modalItem, setModalItem } = usePageContext();
   return (
-    <Modal show={false}>
+    <Modal show={modalItem}>
       <div className="flex justify-end">
-        <BtnClose handleShow={() => {}} />
+        <BtnClose handleShow={() => setModalItem(false)} />
       </div>
       <div className="flex gap-4  px-10">
         <img
