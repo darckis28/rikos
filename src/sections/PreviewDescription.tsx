@@ -10,9 +10,9 @@ const PreviewDescription = () => {
       <div className="flex justify-end">
         <BtnClose handleShow={() => setModalItem(false)} />
       </div>
-      <div className="flex gap-4  px-10">
+      <div className="flex gap-4  px-10 ">
         <img
-          className="flex-1"
+          className="flex-1 w-1/2  aspect-square object-cover object-center"
           src={item.image}
           alt={item.title}
         />

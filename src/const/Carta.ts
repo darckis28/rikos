@@ -7,27 +7,74 @@ export const CARTA: CartaType[] = [
       "https://www.eatperu.com/wp-content/uploads/2019/10/pollo-a-la-brasa-with-salad-and-dipping-sauces-500x375.jpg",
     items: [
       {
-        title: "1/4 Pollo",
-        description: "Cuarto de pollo a la brasa con papas fritas y ensalada",
-        price: 16.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
-        id: 4545454812315613,
-      },
-      {
-        title: "1/2 Pollo",
+        title: "1/4 Pollo a la Brasa",
         description:
-          "Medio pollo a la brasa con papas fritas, ensalada y gaseosa",
-        price: 30.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
-        id: 4545454812315614,
-      },
-      {
-        title: "1 Pollo",
-        description:
-          "Pollo entero a la brasa con papas fritas, ensalada familiar y 1L de gaseosa",
-        price: 55.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+          "Cuarto de pollo a la brasa con papas fritas, ensalada y gaseosa",
+        price: 20.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
         id: 4545454812315615,
+      },
+      {
+        title: "Pollo Entero",
+        description:
+          "Pollo entero a la brasa con papas fritas, ensalada y gaseosa de 1.5L",
+        price: 55.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315616,
+      },
+      {
+        title: "1/2 Pollo + Chaufita",
+        description:
+          "Medio pollo a la brasa acompañado con chaufa de pollo y ensalada",
+        price: 35.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315617,
+      },
+      {
+        title: "Monstrito Brasa",
+        description:
+          "Chaufa con trozos de pollo a la brasa, papas fritas y ensalada",
+        price: 38.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315618,
+      },
+      {
+        title: "Salchipollo",
+        description:
+          "Papas fritas con trozos de pollo a la brasa y salchicha, acompañado de ensalada",
+        price: 25.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315619,
+      },
+      {
+        title: "1/8 Pollo",
+        description: "Octavo de pollo a la brasa con papas fritas y ensalada",
+        price: 15.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315620,
+      },
+      {
+        title: "Pollo a la Brasa con Arroz Chaufa",
+        description:
+          "1/4 de pollo a la brasa acompañado con arroz chaufa de pollo y ensalada",
+        price: 32.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315621,
+      },
+      {
+        title: "Pollo a la Brasa con Arroz con Menestra",
+        description: "1/4 de pollo a la brasa con arroz, menestra y ensalada",
+        price: 30.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4HYfVsDn2Q4PfqUaCDmLfAg4gMV1hywbZA&s",
+        id: 4545454812315622,
       },
     ],
   },
@@ -41,15 +88,44 @@ export const CARTA: CartaType[] = [
         description:
           "Ensalada de pollo a la brasa con lechuga, tomate, zanahoria, huevo duro y aderezo de la casa",
         price: 15.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgPYBTW12e4nez_m10bdzRlcuBhQXiEYChQ&s",
         id: 4545454812315616,
       },
       {
         title: "Ensalada Rusa",
         description: "Ensalada con papa, zanahoria, arvejas, mayonesa y huevo",
         price: 12.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgPYBTW12e4nez_m10bdzRlcuBhQXiEYChQ&s",
         id: 4545454812315617,
+      },
+      {
+        title: "Ensalada Mediterránea",
+        description:
+          "Tomates cherry, pepino, cebolla morada, aceitunas y queso feta con aliño de limón",
+        price: 14.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgPYBTW12e4nez_m10bdzRlcuBhQXiEYChQ&s",
+        id: 4545454812315619,
+      },
+      {
+        title: "Ensalada de Quinoa",
+        description:
+          "Quinoa, aguacate, tomate, pimientos y cilantro con aderezo de limón",
+        price: 16.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgPYBTW12e4nez_m10bdzRlcuBhQXiEYChQ&s",
+        id: 4545454812315620,
+      },
+      {
+        title: "Ensalada Caprese",
+        description:
+          "Rodajas de tomate, mozzarella fresca, albahaca y aceite de oliva",
+        price: 13.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgPYBTW12e4nez_m10bdzRlcuBhQXiEYChQ&s",
+        id: 4545454812315621,
       },
     ],
   },
@@ -59,27 +135,46 @@ export const CARTA: CartaType[] = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6Lqt-4WTPPd_JSXpNc4KQ2_zaNq9VqY0Og&s",
     items: [
       {
-        title: "1/4 Pollo Broaster",
-        description: "Cuarto de pollo broaster con papas fritas y ensalada",
+        title: "2 Piezas de Pollo Broster",
+        description: "Dos piezas de pollo broster con papas fritas y ensalada",
         price: 18.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
-        id: 4545454812315618,
+        image:
+          "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/115383/5a33a602e9ff953d573b6a801914a6307a0a4d35.S.jpg",
+        id: 987654321001,
       },
       {
-        title: "1/2 Pollo Broaster",
-        description:
-          "Medio pollo broaster con papas fritas, ensalada y gaseosa",
-        price: 32.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
-        id: 4545454812315619,
+        title: "3 Piezas de Pollo Broster",
+        description: "Tres piezas de pollo broster con papas fritas y ensalada",
+        price: 22.0,
+        image:
+          "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/115383/5a33a602e9ff953d573b6a801914a6307a0a4d35.S.jpg",
+        id: 987654321002,
       },
       {
-        title: "1 Pollo Broaster",
+        title: "Combo Broster Familiar",
         description:
-          "Pollo broaster entero con papas fritas, ensalada familiar y 1L de gaseosa",
-        price: 58.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
-        id: 4545454812315620,
+          "Ocho piezas de pollo broster con papas familiares y ensalada",
+        price: 60.0,
+        image:
+          "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/115383/5a33a602e9ff953d573b6a801914a6307a0a4d35.S.jpg",
+        id: 987654321003,
+      },
+      {
+        title: "Broster con Chaufa",
+        description: "Dos piezas de pollo broster con arroz chaufa y ensalada",
+        price: 25.0,
+        image:
+          "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/115383/5a33a602e9ff953d573b6a801914a6307a0a4d35.S.jpg",
+        id: 987654321004,
+      },
+      {
+        title: "Salchipollo Broster",
+        description:
+          "Papas fritas con trozos de pollo broster y salchicha, acompañado de ensalada",
+        price: 20.0,
+        image:
+          "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/115383/5a33a602e9ff953d573b6a801914a6307a0a4d35.S.jpg",
+        id: 987654321005,
       },
     ],
   },
@@ -93,7 +188,8 @@ export const CARTA: CartaType[] = [
         description:
           "Arroz chaufa con pollo, huevo, cebolla china y salsa de soya",
         price: 16.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://chifachungheng.com/wp-content/uploads/2020/01/arroz-chaufa-vegetariano.jpg",
         id: 4545454812315621,
       },
       {
@@ -101,8 +197,45 @@ export const CARTA: CartaType[] = [
         description:
           "Arroz chaufa con pollo, chorizo, huevo, cebolla china y salsa de soya",
         price: 20.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://chifachungheng.com/wp-content/uploads/2020/01/arroz-chaufa-vegetariano.jpg",
         id: 4545454812315622,
+      },
+      {
+        title: "Chaufa de Carne",
+        description:
+          "Arroz chaufa con carne de res, huevo, cebolla china y salsa de soya",
+        price: 18.0,
+        image:
+          "https://chifachungheng.com/wp-content/uploads/2020/01/arroz-chaufa-vegetariano.jpg",
+        id: 4545454812315622,
+      },
+      {
+        title: "Chaufa de Mariscos",
+        description:
+          "Arroz chaufa con camarones, calamares, huevo, cebolla china y salsa de soya",
+        price: 20.0,
+        image:
+          "https://chifachungheng.com/wp-content/uploads/2020/01/arroz-chaufa-vegetariano.jpg",
+        id: 4545454812315623,
+      },
+      {
+        title: "Chaufa Especial",
+        description:
+          "Arroz chaufa con pollo, carne, camarones, huevo, cebolla china y salsa de soya",
+        price: 22.0,
+        image:
+          "https://chifachungheng.com/wp-content/uploads/2020/01/arroz-chaufa-vegetariano.jpg",
+        id: 4545454812315624,
+      },
+      {
+        title: "Chaufa Vegetariano",
+        description:
+          "Arroz chaufa con verduras salteadas, tofu, cebolla china y salsa de soya",
+        price: 15.0,
+        image:
+          "https://chifachungheng.com/wp-content/uploads/2020/01/arroz-chaufa-vegetariano.jpg",
+        id: 4545454812315625,
       },
     ],
   },
@@ -143,21 +276,24 @@ export const CARTA: CartaType[] = [
         title: "Papas fritas",
         description: "Porción de papas fritas",
         price: 8.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://www.annarecetasfaciles.com/files/patatas-horno-guarnicion-scaled.jpg",
         id: 4545454812315626,
       },
       {
         title: "Arroz blanco",
         description: "Porción de arroz blanco",
         price: 5.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://www.annarecetasfaciles.com/files/patatas-horno-guarnicion-scaled.jpg",
         id: 4545454812315627,
       },
       {
         title: "Ensalada mixta",
         description: "Lechuga, tomate y pepino",
         price: 6.0,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://www.annarecetasfaciles.com/files/patatas-horno-guarnicion-scaled.jpg",
         id: 4545454812315628,
       },
     ],
