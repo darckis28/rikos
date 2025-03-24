@@ -13,7 +13,7 @@ const PreviewDescription = () => {
     image: polloentero,
   };
   return (
-    <Modal show={true}>
+    <Modal show={false}>
       <div className="flex justify-end">
         <BtnClose handleShow={() => {}} />
       </div>

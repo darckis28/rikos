@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <div className="px-36">
+      <div className="py-10 container mx-auto">
         <Carta />
         <Promos />
       </div>
