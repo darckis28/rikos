@@ -1,12 +1,12 @@
 import { MdAddShoppingCart } from "react-icons/md";
 import { item } from "../interfaces/interface";
 
-interface CartaType {
+interface CartaProps {
   item: item;
   actionClick?: (title: string) => void;
   actionItem?: (item: item) => void;
 }
-const CardMenu = ({ item, actionClick, actionItem }: CartaType) => {
+const CardMenu = ({ item, actionClick, actionItem }: CartaProps) => {
   return (
     <li
       className="group cursor-pointer"
