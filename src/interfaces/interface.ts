@@ -1,8 +1,8 @@
 export interface item {
-  id?: number;
+  id: number;
   title: string;
   description?: string;
-  price?: number;
+  price: number;
   image: string;
 }
 
@@ -10,4 +10,7 @@ export interface CartaType {
   title: string;
   image: string;
   items: item[];
+}
+export interface cartItem extends item {
+  qty: number;
 }

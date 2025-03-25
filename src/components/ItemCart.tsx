@@ -1,14 +1,12 @@
-const ItemCart = () => {
-  const item = {
-    id: 6565465,
-    title: "Festín Clásico",
-    description:
-      "1/4 POLLO A LA LEÑA PECHO + PAPAS FRITAS REGULAR + ENSALADA CLASICA + GASEOSA PEPSI MEDIANA",
-    price: 25.0,
-    image:
-      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAP-fe0fpQ-ODx5ppHOK26SIIaK_Xz66bauWdacDfiTD5ZEg0Oa484fbiUkX6_wljKux4ENmUWBs6X5tueRYEVJPvuO2YeiJhryCVz3w",
-    qyt: 5,
-  };
+import { useCart } from "../hooks/useCart";
+import { cartItem } from "../interfaces/interface";
+
+type Props = {
+  item: cartItem;
+};
+
+const ItemCart = ({ item }: Props) => {
+  const { deleteItem } = useCart();
   return (
     <li className="flex items-center gap-4">
       <img
@@ -18,7 +16,7 @@ const ItemCart = () => {
       />
 
       <div>
-        <h3 className="text-sm text-gray-900">{item.title}</h3>
+        <h3 className="text-sm text-gray-900 uppercase">{item.title}</h3>
 
         <dl className="mt-0.5 space-y-px text-[12px] text-gray-600">
           <div>
@@ -34,25 +32,11 @@ const ItemCart = () => {
       </div>
 
       <div className="flex flex-1 items-center justify-end gap-2">
-        <form>
-          <label
-            htmlFor="Line1Qty"
-            className="sr-only"
-          >
-            {" "}
-            Quantity{" "}
-          </label>
-
-          <input
-            type="number"
-            min="1"
-            value={item.qyt}
-            id="Line1Qty"
-            className="h-8 w-12 rounded-sm border-gray-200 bg-gray-50 p-0 text-center text-normal text-gray-600 [-moz-appearance:_textfield] focus:outline-hidden [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
-          />
-        </form>
-
-        <button className="text-gray-600 transition hover:text-red-600 cursor-pointer">
+        <span>{item.qty}</span>
+        <button
+          onClick={() => deleteItem(item.id)}
+          className="text-gray-600 transition hover:text-red-600 cursor-pointer"
+        >
           <span className="sr-only">Remove item</span>
 
           <svg

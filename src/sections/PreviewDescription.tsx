@@ -3,8 +3,19 @@ import Modal from "../components/Modal";
 import { FaPlus } from "react-icons/fa";
 import { RiSubtractFill } from "react-icons/ri";
 import { usePageContext } from "../hooks/usePageContext";
+import { useCart } from "../hooks/useCart";
+import { useState } from "react";
 const PreviewDescription = () => {
+  const [quantity, setQuantity] = useState(1);
   const { item, modalItem, setModalItem } = usePageContext();
+  const { addCart } = useCart();
+  const reduce = () => {
+    if (quantity > 1) return setQuantity((item) => item - 1);
+  };
+  const increase = () => {
+    if (quantity < 10) return setQuantity((item) => item + 1);
+  };
+
   return (
     <Modal
       show={modalItem}
@@ -31,17 +42,26 @@ const PreviewDescription = () => {
           </div>
           <div>
             <div className="mb-3 flex items-center ">
-              <button className="w-20 h-10 bg-[#2d3a4b] text-white flex items-center justify-center rounded-l-2xl active:scale-90 cursor-pointer ">
+              <button
+                onClick={reduce}
+                className="w-20 h-10 bg-[#2d3a4b] text-white flex items-center justify-center rounded-l-2xl active:scale-90 cursor-pointer "
+              >
                 <RiSubtractFill />
               </button>
               <span className="w-20 h-10 flex items-center justify-center border-t border-[#2d3a4b] border-b ">
-                1
+                {quantity}
               </span>
-              <button className="w-20 h-10 bg-[#2d3a4b] text-white flex items-center justify-center rounded-r-2xl cursor-pointer active:scale-90">
+              <button
+                onClick={increase}
+                className="w-20 h-10 bg-[#2d3a4b] text-white flex items-center justify-center rounded-r-2xl cursor-pointer active:scale-90"
+              >
                 <FaPlus />
               </button>
             </div>
-            <button className="bg-red-800 w-full py-2 rounded-2xl text-white font-bold uppercase hover:contrast-200 cursor-pointer">
+            <button
+              onClick={() => addCart({ ...item, qty: quantity })}
+              className="bg-red-800 w-full py-2 rounded-2xl text-white font-bold uppercase hover:contrast-200 cursor-pointer"
+            >
               agregar a mi orden
             </button>
           </div>

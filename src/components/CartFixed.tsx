@@ -1,6 +1,8 @@
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useCart } from "../hooks/useCart";
 const CartFixed = () => {
+  const { quantityCart } = useCart();
   return (
     <Link
       to={"cart"}
@@ -10,7 +12,7 @@ const CartFixed = () => {
         <span className="text-white text-4xl">
           <MdOutlineShoppingBag />
         </span>
-        <span className="font-bold ">0</span>
+        <span className="font-bold ">{quantityCart}</span>
       </div>
       <p className="font-bold text-white uppercase text-xs ">mi orden</p>
     </Link>
