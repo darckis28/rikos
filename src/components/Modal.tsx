@@ -1,9 +1,8 @@
 type ModalProps = {
   children: React.ReactNode;
   show: boolean;
-  onclick?: () => void;
 };
-const Modal = ({ children, show, onclick }: ModalProps) => {
+const Modal = ({ children, show }: ModalProps) => {
   return (
     <div
       className={` ${

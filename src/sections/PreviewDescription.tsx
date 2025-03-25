@@ -21,10 +21,7 @@ const PreviewDescription = () => {
     setQuantity(1);
   };
   return (
-    <Modal
-      show={modalItem}
-      onclick={() => setModalItem(false)}
-    >
+    <Modal show={modalItem}>
       <div className="flex justify-end">
         <BtnClose handleShow={() => setModalItem(false)} />
       </div>

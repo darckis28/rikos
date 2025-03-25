@@ -13,10 +13,7 @@ const PreviewMenu = () => {
   };
 
   return (
-    <Modal
-      show={modalCarta}
-      onclick={handleShow}
-    >
+    <Modal show={modalCarta}>
       <header className="flex items-center justify-between py-4 px-5">
         <Title>{itemsPreview.title}</Title>
         <BtnClose handleShow={handleShow} />

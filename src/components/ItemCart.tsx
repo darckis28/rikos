@@ -26,7 +26,9 @@ const ItemCart = ({ item }: Props) => {
 
           <div>
             <dt className="inline font-bold">Precio: </dt>
-            <dd className="inline text-red-800">S/{item.price.toFixed(2)}</dd>
+            <dd className="inline text-red-800">
+              S/{item.price && item?.price.toFixed(2)}
+            </dd>
           </div>
         </dl>
       </div>
@@ -34,7 +36,7 @@ const ItemCart = ({ item }: Props) => {
       <div className="flex flex-1 items-center justify-end gap-2">
         <span>{item.qty}</span>
         <button
-          onClick={() => deleteItem(item.id)}
+          onClick={() => item.id && deleteItem(item?.id)}
           className="text-gray-600 transition hover:text-red-600 cursor-pointer"
         >
           <span className="sr-only">Remove item</span>

@@ -1,8 +1,8 @@
 export interface item {
-  id: number;
+  id?: number;
   title: string;
   description?: string;
-  price: number;
+  price?: number;
   image: string;
 }
 
