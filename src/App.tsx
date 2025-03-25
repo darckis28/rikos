@@ -1,11 +1,14 @@
+import CartProvaider from "./context/CartProvaider";
 import PagePovaider from "./context/PagePovaider";
 import { RoutesPage } from "./routers/router";
 
 const App = () => {
   return (
-    <PagePovaider>
-      <RoutesPage />
-    </PagePovaider>
+    <CartProvaider>
+      <PagePovaider>
+        <RoutesPage />
+      </PagePovaider>
+    </CartProvaider>
   );
 };
 export default App;

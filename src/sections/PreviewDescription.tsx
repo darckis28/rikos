@@ -6,7 +6,10 @@ import { usePageContext } from "../hooks/usePageContext";
 const PreviewDescription = () => {
   const { item, modalItem, setModalItem } = usePageContext();
   return (
-    <Modal show={modalItem}>
+    <Modal
+      show={modalItem}
+      onclick={() => setModalItem(false)}
+    >
       <div className="flex justify-end">
         <BtnClose handleShow={() => setModalItem(false)} />
       </div>
