@@ -1,10 +1,10 @@
 import PagePovaider from "./context/PagePovaider";
-import Home from "./page/Home";
+import { RoutesPage } from "./routers/router";
 
 const App = () => {
   return (
     <PagePovaider>
-      <Home />
+      <RoutesPage />
     </PagePovaider>
   );
 };

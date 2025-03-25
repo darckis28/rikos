@@ -6,7 +6,7 @@ const Promos = () => {
   const { activeModalItem } = usePageContext();
   return (
     <section>
-      <Title>PROMOCIONES WEB</Title>
+      <Title center>PROMOCIONES WEB</Title>
       <ul className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {PROMOS.map((promo) => (
           <CardMenu
