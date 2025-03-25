@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout";
 import Menu from "../page/Menu";
 import Promociones from "../page/Promociones";
 import About from "../page/About";
+import Cart from "../page/Cart";
 
 export const RoutesPage = () => {
   return (
@@ -25,6 +26,10 @@ export const RoutesPage = () => {
           <Route
             path="about"
             element={<About />}
+          />
+          <Route
+            path="cart"
+            element={<Cart />}
           />
         </Route>
       </Routes>
