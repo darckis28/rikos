@@ -26,7 +26,7 @@ const ItemCart = ({ item }: Props) => {
 
           <div>
             <dt className="inline font-bold">Precio: </dt>
-            <dd className="inline text-red-800">S/{item.price}.00</dd>
+            <dd className="inline text-red-800">S/{item.price.toFixed(2)}</dd>
           </div>
         </dl>
       </div>

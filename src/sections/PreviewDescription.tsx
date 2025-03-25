@@ -15,7 +15,11 @@ const PreviewDescription = () => {
   const increase = () => {
     if (quantity < 10) return setQuantity((item) => item + 1);
   };
-
+  const handelClick = () => {
+    addCart({ ...item, qty: quantity });
+    setModalItem(false);
+    setQuantity(1);
+  };
   return (
     <Modal
       show={modalItem}
@@ -59,7 +63,7 @@ const PreviewDescription = () => {
               </button>
             </div>
             <button
-              onClick={() => addCart({ ...item, qty: quantity })}
+              onClick={handelClick}
               className="bg-red-800 w-full py-2 rounded-2xl text-white font-bold uppercase hover:contrast-200 cursor-pointer"
             >
               agregar a mi orden

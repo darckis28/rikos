@@ -2,7 +2,8 @@ import { cartItem } from "../interfaces/interface";
 
 type actionCart =
   | { type: "ADD"; payload: cartItem }
-  | { type: "DELETE"; payload: { id: number } };
+  | { type: "DELETE"; payload: { id: number } }
+  | { type: "RESET" };
 export const cartReducer = (state: cartItem[], action: actionCart) => {
   switch (action.type) {
     case "ADD":
@@ -14,5 +15,7 @@ export const cartReducer = (state: cartItem[], action: actionCart) => {
       return [...state, action.payload];
     case "DELETE":
       return state.filter((itm) => itm.id !== action.payload.id);
+    case "RESET":
+      return [];
   }
 };

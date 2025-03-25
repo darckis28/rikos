@@ -2,7 +2,15 @@ import ItemCart from "../components/ItemCart";
 import { useCart } from "../hooks/useCart";
 
 const Cart = () => {
-  const { itemsCart, totalCart } = useCart();
+  const { itemsCart, totalCart, quantityCart, resetCart } = useCart();
+  function enviarPedidoWhatsApp() {
+    const mensaje = `*Pedido:*%0A%0A${itemsCart
+      .map((item) => `- ${item.title} x${item.qty} - S/${quantityCart}`)
+      .join("%0A")}%0A%0A*Total: S/${totalCart.toFixed(2)}*`;
+    const url = `https://wa.me/${914135701}?text=${mensaje}`;
+    window.open(url, "_blank");
+    resetCart();
+  }
   return (
     <section>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
@@ -37,12 +45,12 @@ const Cart = () => {
                   </dl>
 
                   <div className="flex justify-end">
-                    <a
-                      href="#"
-                      className="block rounded-sm uppercase bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
+                    <button
+                      onClick={enviarPedidoWhatsApp}
+                      className="block rounded-sm uppercase bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600 cursor-pointer"
                     >
                       Pedir
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

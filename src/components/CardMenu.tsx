@@ -32,7 +32,7 @@ const CardMenu = ({ item, actionClick, actionItem }: CartaType) => {
       </h3>
       {item?.price && (
         <span className="text-center block text-red-700 font-bold ">
-          S/{item?.price}.00
+          S/{item?.price.toFixed(2)}
         </span>
       )}
     </li>

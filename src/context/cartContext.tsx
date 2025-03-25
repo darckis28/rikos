@@ -5,5 +5,6 @@ interface PropsCart {
   itemsCart: cartItem[];
   addCart: (item: cartItem) => void;
   deleteItem: (id: number) => void;
+  resetCart: () => void;
 }
 export const CartContext = createContext({} as PropsCart);
