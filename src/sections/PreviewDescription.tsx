@@ -22,7 +22,7 @@ const PreviewDescription = () => {
   };
   return (
     <Modal show={modalItem}>
-      <div className="flex justify-end">
+      <div className="flex justify-end mr-4 my-4">
         <BtnClose handleShow={() => setModalItem(false)} />
       </div>
       <div className="flex flex-col lg:flex-row gap-4  px-10 ">
@@ -61,7 +61,7 @@ const PreviewDescription = () => {
             </div>
             <button
               onClick={handelClick}
-              className="bg-red-800 w-full py-2 rounded-2xl text-white font-bold uppercase hover:contrast-200 cursor-pointer"
+              className="bg-red-800 w-full py-2 mb-4 rounded-2xl text-white font-bold uppercase hover:contrast-200 cursor-pointer"
             >
               agregar a mi orden
             </button>
