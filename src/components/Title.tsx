@@ -1,5 +1,5 @@
 interface TitleProps {
-  children: string;
+  children: string | string[];
   center?: boolean;
 }
 
