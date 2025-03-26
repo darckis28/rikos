@@ -5,7 +5,7 @@ import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="bg-[#171E27] text-white lg:px-32 py-5 px-9 ">
-      <div className="flex flex-col   gap-10 mb-8">
+      <div className="flex flex-col md:flex-row   gap-10 mb-8">
         <div>
           <img
             src="/logo.png"
@@ -51,7 +51,9 @@ const Footer = () => {
             <span className="text-bse uppercase -tracking-[1px]">
               Contacta con un asesor
             </span>
-            <span className="text-3xl  -tracking-[1px]">+51 900 009 000 </span>
+            <span className="lg:text-3xl  -tracking-[1px]">
+              +51 900 009 000{" "}
+            </span>
           </div>
         </div>
         <div>
