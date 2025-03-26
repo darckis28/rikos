@@ -18,7 +18,7 @@ const Hero = () => {
     }
   };
   return (
-    <div className="relative h-[400px] lg:h-[500px]">
+    <div className="relative aspect-video max-h-[500px] w-full">
       <button
         onClick={next}
         className="absolute text-white text-7xl  right-0 top-1/2 -translate-y-1/2 cursor-pointer p-2 bg-black/30 hover:bg-white hover:text-black transition-all "

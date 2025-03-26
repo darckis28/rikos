@@ -7,7 +7,7 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section>
+    <section className="container mx-auto md:px-20">
       <Description
         title="Visión "
         description="Ser la MEJOR cadena de restaurantes de Pollos a la Brasa enfocada en la familia, transmitiendo nuestra PASIÓN en cada experiencia."
