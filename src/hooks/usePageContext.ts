@@ -10,6 +10,8 @@ export const usePageContext = () => {
     setModalItem,
     activeModalItem,
     item,
+    setShowNav,
+    showNav,
   } = useContext(ContextPage);
   return {
     activeModalCarta,
@@ -20,5 +22,7 @@ export const usePageContext = () => {
     setModalItem,
     activeModalItem,
     item,
+    setShowNav,
+    showNav,
   };
 };

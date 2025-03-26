@@ -10,5 +10,7 @@ interface ContextPage {
   setModalItem: (value: boolean) => void;
   activeModalItem: (item: item) => void;
   item: item;
+  setShowNav: (value: boolean) => void;
+  showNav: boolean;
 }
 export const ContextPage = createContext({} as ContextPage);

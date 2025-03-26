@@ -1,10 +1,13 @@
 import { FaShoppingCart } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { useCart } from "../hooks/useCart";
+import { usePageContext } from "../hooks/usePageContext";
 const Navegation = () => {
   const { quantityCart } = useCart();
+  const { setShowNav } = usePageContext();
   return (
-    <nav className="bg-red-800 flex justify-between items-center border-b border-black/20 px-20">
+    <nav className="bg-red-800 flex justify-between items-center border-b border-black/20 px-4 lg:px-20">
       <Link to="/">
         <img
           src="/logo.png"
@@ -12,7 +15,7 @@ const Navegation = () => {
           className="invert w-24"
         />
       </Link>
-      <div className="flex items-center gap-2 uppercase text-sm">
+      <div className="hidden items-center gap-2 uppercase text-sm lg:flex">
         <ul className="flex text-white space-x-5">
           <li>
             <Link
@@ -57,6 +60,12 @@ const Navegation = () => {
           <FaShoppingCart />
         </Link>
       </div>
+      <button
+        onClick={() => setShowNav(true)}
+        className="text-white text-2xl lg:hidden"
+      >
+        <GiHamburgerMenu />
+      </button>
     </nav>
   );
 };

@@ -15,7 +15,7 @@ const Carta = () => {
   return (
     <section>
       <Title center>Nuestra carta web</Title>
-      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 ">
+      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 px-5 ">
         {CARTA.map((item: CartaType) => (
           <CardMenu
             actionClick={handleShowPromos}

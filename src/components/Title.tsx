@@ -8,7 +8,7 @@ const Title = ({ children, center }: TitleProps) => {
     <h2
       className={`text-[#2D3A4B] ${
         center && "text-center"
-      } lg:text-4xl font-extrabold my-5 uppercase `}
+      } lg:text-4xl text-2xl font-extrabold my-5 uppercase `}
     >
       {children}
     </h2>

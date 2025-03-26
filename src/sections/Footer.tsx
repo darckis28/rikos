@@ -4,8 +4,8 @@ import { AiFillTikTok } from "react-icons/ai";
 import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md";
 const Footer = () => {
   return (
-    <footer className="bg-[#171E27] text-white lg:px-32 py-5 ">
-      <div className="flex justify-center gap-10 mb-8">
+    <footer className="bg-[#171E27] text-white lg:px-32 py-5 px-9 ">
+      <div className="flex flex-col   gap-10 mb-8">
         <div>
           <img
             src="/logo.png"

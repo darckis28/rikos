@@ -25,9 +25,9 @@ const PreviewDescription = () => {
       <div className="flex justify-end">
         <BtnClose handleShow={() => setModalItem(false)} />
       </div>
-      <div className="flex gap-4  px-10 ">
+      <div className="flex flex-col lg:flex-row gap-4  px-10 ">
         <img
-          className="flex-1 w-1/2  aspect-square object-cover object-center"
+          className="flex-1 lg:w-1/2  aspect-square object-cover object-center"
           src={item.image}
           alt={item.title}
         />
@@ -37,7 +37,7 @@ const PreviewDescription = () => {
               {item.title}
             </h2>
             <p className="text-[#2d3a4b] my-4">{item.description}</p>
-            <p className="font-bold text-3xl text-red-800  ">
+            <p className="font-bold text-3xl text-red-800 mb-5 ">
               S/{item.price}.00
             </p>
           </div>

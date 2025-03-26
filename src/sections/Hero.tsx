@@ -27,7 +27,7 @@ const Hero = () => {
       </button>
       <button
         onClick={back}
-        className="absolute text-white text-7xl left-0 top-1/2 -translate-y-1/ cursor-pointer p-2 bg-black/30 hover:bg-white hover:text-black transition-all"
+        className="absolute text-white text-7xl left-0 top-1/2 -translate-y-1/2 cursor-pointer p-2 bg-black/30 hover:bg-white hover:text-black transition-all"
       >
         <MdOutlineNavigateBefore />
       </button>

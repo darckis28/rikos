@@ -7,6 +7,7 @@ interface Props {
 const PagePovaider = ({ children }: Props) => {
   const [modalCarta, setModalCarta] = useState(false);
   const [modalItem, setModalItem] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const [item, setItem] = useState<item>({} as item);
   const [itemsPreview, setItemsPreview] = useState<CartaType>({} as CartaType);
 
@@ -29,6 +30,8 @@ const PagePovaider = ({ children }: Props) => {
         setModalItem,
         activeModalItem,
         item,
+        showNav,
+        setShowNav,
       }}
     >
       {children}

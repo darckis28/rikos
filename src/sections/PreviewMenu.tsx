@@ -19,7 +19,7 @@ const PreviewMenu = () => {
         <BtnClose handleShow={handleShow} />
       </header>
 
-      <ul className="grid grid-cols-4 gap-4 pb-8 px-8  ">
+      <ul className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 pb-8 px-8  ">
         {itemsPreview.items?.map((promo, idx) => (
           <CardMenu
             actionItem={activeModalItem}

@@ -5,10 +5,12 @@ import Navegation from "../sections/Navegation";
 import PreviewDescription from "../sections/PreviewDescription";
 import PreviewMenu from "../sections/PreviewMenu";
 import CartFixed from "../components/CartFixed";
+import MenuNav from "../components/MenuNav";
 
 const Layout = () => {
   return (
     <div className="container-page relative">
+      <MenuNav />
       <CartFixed />
       <div className="[grid-area:header]">
         <Message />
