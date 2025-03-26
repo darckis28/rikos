@@ -43,7 +43,12 @@ const MenuNav = () => {
           </Link>
         </li>
         <li>
-          <Link to={"about"}>Sobre nosotros</Link>
+          <Link
+            onClick={() => setShowNav(false)}
+            to={"about"}
+          >
+            Sobre nosotros
+          </Link>
         </li>
         <li>
           <Link
