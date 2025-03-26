@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import ItemCart from "../components/ItemCart";
 import { useCart } from "../hooks/useCart";
 
 const Cart = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { itemsCart, totalCart, quantityCart, resetCart } = useCart();
+
   function enviarPedidoWhatsApp() {
     const mensaje = `*Pedido:*%0A%0A${itemsCart
       .map((item) => `- ${item.title} x${item.qty} - S/${quantityCart}`)
