@@ -12,7 +12,7 @@ const Cart = () => {
     const mensaje = `*Pedido:*%0A%0A${itemsCart
       .map((item) => `- ${item.title} x${item.qty} - S/${quantityCart}`)
       .join("%0A")}%0A%0A*Total: S/${totalCart.toFixed(2)}*`;
-    const url = `https://wa.me/${914135701}?text=${mensaje}`;
+    const url = `https://wa.me/${900009000}?text=${mensaje}`;
     window.open(url, "_blank");
     resetCart();
   }
