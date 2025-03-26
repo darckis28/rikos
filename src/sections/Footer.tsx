@@ -27,14 +27,23 @@ const Footer = () => {
             </li>
           </ul>
           <div className="flex gap-2 text-2xl">
-            <a href="#">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/rikospollosyparrillas"
+            >
               <FaFacebookSquare />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/rikos_peru/"
+              target="_blank"
+            >
               {" "}
               <FaSquareInstagram />
             </a>
-            <a href="#">
+            <a
+              href="https://www.tiktok.com/@rikos.pe"
+              target="_blank"
+            >
               {" "}
               <AiFillTikTok />
             </a>

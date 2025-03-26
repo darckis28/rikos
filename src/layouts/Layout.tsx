@@ -6,10 +6,12 @@ import PreviewDescription from "../sections/PreviewDescription";
 import PreviewMenu from "../sections/PreviewMenu";
 import CartFixed from "../components/CartFixed";
 import MenuNav from "../components/MenuNav";
+import Promo from "../components/Promo";
 
 const Layout = () => {
   return (
     <div className="container-page relative">
+      <Promo />
       <MenuNav />
       <CartFixed />
       <div className="[grid-area:header]">

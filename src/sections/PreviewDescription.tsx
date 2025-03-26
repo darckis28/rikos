@@ -38,7 +38,7 @@ const PreviewDescription = () => {
             </h2>
             <p className="text-[#2d3a4b] my-4">{item.description}</p>
             <p className="font-bold text-3xl text-red-800 mb-5 ">
-              S/{item.price}.00
+              S/{item.price?.toFixed(2)}
             </p>
           </div>
           <div>

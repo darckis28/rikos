@@ -248,21 +248,23 @@ export const CARTA: CartaType[] = [
         title: "Coca Cola 500ml",
         description: "Bebida gaseosa Coca Cola personal",
         price: 3.5,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image: "https://m.media-amazon.com/images/I/51v8nyxSOYL._SL1500_.jpg",
         id: 4545454812315623,
       },
       {
         title: "Inca Kola 500ml",
         description: "Bebida gaseosa Inca Kola personal",
         price: 3.5,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://masterkong.pe/pueblolibre/wp-content/uploads/sites/2/2023/01/inka-kola-500.jpg",
         id: 4545454812315624,
       },
       {
         title: "Agua mineral",
         description: "Agua mineral sin gas 500ml",
         price: 2.5,
-        image: "https://portal.villachicken.com.pe/api/img/bebidas-web-web.png",
+        image:
+          "https://metroio.vtexassets.com/arquivos/ids/249303/50100001-01-18742.jpg?v=638173950121500000",
         id: 4545454812315625,
       },
     ],
@@ -277,7 +279,7 @@ export const CARTA: CartaType[] = [
         description: "Porción de papas fritas",
         price: 8.0,
         image:
-          "https://www.annarecetasfaciles.com/files/patatas-horno-guarnicion-scaled.jpg",
+          "https://okdiario.com/img/2023/04/12/el-truco-definitivo-para-que-las-patatas-fritas-te-queden-mas-crujientes.jpg",
         id: 4545454812315626,
       },
       {
@@ -285,7 +287,7 @@ export const CARTA: CartaType[] = [
         description: "Porción de arroz blanco",
         price: 5.0,
         image:
-          "https://www.annarecetasfaciles.com/files/patatas-horno-guarnicion-scaled.jpg",
+          "https://imag.bonviveur.com/como-hacer-un-arroz-blanco-perfecto.jpg",
         id: 4545454812315627,
       },
       {
@@ -293,7 +295,7 @@ export const CARTA: CartaType[] = [
         description: "Lechuga, tomate y pepino",
         price: 6.0,
         image:
-          "https://www.annarecetasfaciles.com/files/patatas-horno-guarnicion-scaled.jpg",
+          "https://www.recipesfromeurope.com/wp-content/uploads/2022/12/ensalada-mixta-recipe-og.jpg",
         id: 4545454812315628,
       },
     ],
