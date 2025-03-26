@@ -12,7 +12,7 @@ const Navegation = () => {
         <img
           src="/logo.png"
           alt="logo de polleria rikos"
-          className="invert w-24"
+          className="invert w-24 "
         />
       </Link>
       <div className="hidden items-center gap-2 uppercase text-sm lg:flex">

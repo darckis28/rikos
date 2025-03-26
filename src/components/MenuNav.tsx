@@ -8,7 +8,7 @@ const MenuNav = () => {
     <nav
       className={`bg-red-800 fixed h-screen z-50 w-full ${
         showNav ? "flex" : "hidden"
-      } items-center justify-center`}
+      } items-center justify-center animate-entry transition-all`}
     >
       <button
         onClick={() => setShowNav(false)}

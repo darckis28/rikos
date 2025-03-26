@@ -29,6 +29,9 @@
 }
 @theme {
   --animate-wiggle: wiggle 0.5s ease-in-out;
+  --animate-entry: slide-in-bck-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+
   @keyframes wiggle {
     0% {
       transform: translateY(100px);
@@ -36,6 +39,18 @@
     ,
     100% {
       transform: translateY(0px);
+    }
+  }
+  @keyframes slide-in-bck-left {
+    0% {
+      -webkit-transform: translateZ(700px) translateX(-400px);
+      transform: translateZ(700px) translateX(-400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+      transform: translateZ(0) translateX(0);
+      opacity: 1;
     }
   }
 }
