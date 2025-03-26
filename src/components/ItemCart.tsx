@@ -8,7 +8,7 @@ type Props = {
 const ItemCart = ({ item }: Props) => {
   const { deleteItem } = useCart();
   return (
-    <li className="flex items-center gap-4">
+    <li className="flex items-center gap-2 lg:gap-4">
       <img
         src={item.image}
         alt={item.description}
@@ -21,7 +21,9 @@ const ItemCart = ({ item }: Props) => {
         <dl className="mt-0.5 space-y-px text-[12px] text-gray-600">
           <div>
             <dt className="inline font-bold">Contenido: </dt>
-            <dd className="inline">{item.description}</dd>
+            <dd className="lg:inline whitespace-nowrap overflow-ellipsis w-45 overflow-hidden">
+              {item.description}
+            </dd>
           </div>
 
           <div>
